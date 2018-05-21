@@ -1,0 +1,11 @@
+<div class="content-container">
+  <mat-form-field class="full-width">
+    <input #searchText matInput placeholder="Search Party" (keyup.enter)="onSearch(searchText.value)">
+  </mat-form-field>
+  <div class="button-row">
+    <button mat-raised-button color="primary" (click)="onSearch(searchText.value)">Search</button>
+  </div>
+  <div>
+    {{searchResult}}
+  </div>
+</div>
